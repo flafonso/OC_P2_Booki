@@ -12,11 +12,55 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <!-- my font-awesome kit, it's useless because in the supplied code there is already a kit. -->
+    <!-- <script src="https://kit.fontawesome.com/f056a09ca4.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <img src="./images/logo/Booki.png" alt="Image du logo de Booki">
+            <nav>
+                <a>Hébergements</a>
+                <a>Activités</a>
+            </nav>
+        </header>
+        <section id="search-container">
+            <div>
+                <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
+            </div>
+            <form>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <input type="search" id="site-search" name="q">
+                <button type="submit">Recherche</button>
+            </form>
+            <div id="filter-container">
+                <p>Filtres</p>
+                <div>
+                    <i class="fa-solid fa-money-bill-wave fa-lg"></i>
+                    <p>Économique</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-person fa-lg"></i>
+                    <p>Familial</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <p>Romantique</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-fire fa-lg"></i>
+                    <p>Nos pépites</p>
+                </div>
+            </div>
+            <div id="info">
+                <i class="fa-solid fa-info fa-2xs"></i>
+                <span>Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
+        </section>
         <main>
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
@@ -24,7 +68,7 @@
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
-                        <h2 class="section-title">Les plus populaires</h2>
+                            <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">

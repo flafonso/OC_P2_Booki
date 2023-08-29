@@ -6,6 +6,7 @@
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
+    --darker-bg-color: #D9D9D9;
     --filter-bg-color: #DEEBFF;
 }
 
@@ -56,6 +57,133 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Header ***********/
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+}
+
+header img {
+    width: 105px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 70px;
+}
+
+header a {
+    padding-top: 12px;
+}
+
+header a:hover {
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+/****** Search and filters ***********/
+#search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+#search-container form {
+    display: flex;
+    flex-direction: row;
+    width: 377px;
+    height: 48px;
+}
+
+#search-container form div {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    border-radius: 15px 0px 0px 15px;
+}
+
+#search-container form i {
+    color: #000000;
+}
+
+#search-container input[type=search] {
+    width: 54%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid var(--main-bg-color);
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* to remove the cancel button */
+#search-container input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+/**** ****/
+
+#search-container button {
+    width: 33%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--main-color);
+    border: solid 1px var(--main-color);
+    border-radius: 0px 15px 15px 0px;
+    padding: 10px;
+}
+
+/**** Filters ****/
+#filter-container {
+    width: 65%;
+    display: flex;
+    gap: 15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#filter-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    height: 45px;
+    border: 3px solid var(--darker-bg-color);
+    border-radius: 30px;
+    padding: 0 17px 0 17px;
+    gap: 10px;
+    cursor: default;
+}
+
+#filter-container i {
+    width: 22px;
+}
+
+#filter-container div:hover {
+    background-color: var(--filter-bg-color);
+}
+
+#info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#info i {
+    text-align: center;
+    margin-right: 15px;
+    padding: 6px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--darker-bg-color);
+    border-radius: 30px;
 }
 
 /****** Hebergements And Populaires ***********/
