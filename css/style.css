@@ -63,7 +63,7 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3vw;
+    padding-bottom: 3vw;
 }
 
 header img {
@@ -90,7 +90,13 @@ header a:hover {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    margin-top: 30px;
     margin-bottom: 35px;
+}
+
+#search-title p {
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 #search-container form {
@@ -203,6 +209,56 @@ header a:hover {
 .hebergements {
     width: 65%;
 }
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hebergements-cards a {
+    width: 29%;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 116px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0 0 5px 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
 
 /****** Populaires ***********/
 .populaires {
