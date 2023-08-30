@@ -63,11 +63,12 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 3vw;
 }
 
 header img {
-    width: 105px;
+    width: 61px;
+    height: 19px;
+    margin: 30px;
 }
 
 header nav {
@@ -81,7 +82,7 @@ header a {
 }
 
 header a:hover {
-    border-top: 2px solid var(--main-color);
+    border-top: 3px solid var(--main-color);
     color: var(--main-color);
 }
 
@@ -330,6 +331,8 @@ header a:hover {
 }
 
 .activities-cards .card {
+    width: 100%;
+    height: 100%;
     padding: 0;
 }
 
@@ -344,13 +347,35 @@ header a:hover {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding: 20px 0 20px 10px;
+    padding: 17px 0 20px 20px;
     margin-top: 0;
 }
 
 .activities-cards .card-title {
     margin: 0;
 }
+
+/****** Footer ***********/
+footer {
+    height: 163px;
+    background-color: var(--main-bg-color);
+    display: flex;
+}
+
+footer section {
+    flex: 1 1 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .section-title {
+    font-size: 18px;
+}
+
+
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
