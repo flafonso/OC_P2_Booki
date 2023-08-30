@@ -221,6 +221,7 @@ header a:hover {
 
 .hebergements-cards a {
     width: 29%;
+    /* flex: 1 1 150px; */
 }
 
 .hebergements-cards .card {
@@ -305,7 +306,51 @@ header a:hover {
     margin-bottom: 5px;
 }
 
+/****** Activities ***********/
+.activities {
+    width: 100%;
+    padding: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+}
 
+.activities-cards {
+    width: 100%;
+    display: flex;
+    flex: 1 1 auto;
+    /* justify-content: space-between; */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.activities-cards a {
+    /* so that the elements take up all the available space and keep the same width  */
+    flex: 1 1 0px;
+}
+
+.activities-cards .card {
+    padding: 0;
+}
+
+.activities-cards img {
+    width: 100%;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activities-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px 0 20px 10px;
+    margin-top: 0;
+}
+
+.activities-cards .card-title {
+    margin: 0;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
