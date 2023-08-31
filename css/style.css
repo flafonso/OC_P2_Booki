@@ -158,7 +158,7 @@ header a:hover {
     font-weight: bold;
 }
 
-#filter-container div {
+#filter-container a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,14 +168,14 @@ header a:hover {
     border-radius: 30px;
     padding: 0 17px 0 17px;
     gap: 10px;
-    cursor: default;
+    /* cursor: default; */
 }
 
 #filter-container i {
     width: 22px;
 }
 
-#filter-container div:hover {
+#filter-container a:hover {
     background-color: var(--filter-bg-color);
 }
 
@@ -186,13 +186,16 @@ header a:hover {
 }
 
 #info i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-right: 15px;
     padding: 6px;
     width: 12px;
     height: 12px;
     border: 1px solid var(--darker-bg-color);
-    border-radius: 30px;
+    border-radius: 50%;
 }
 
 /****** Hebergements And Populaires ***********/
