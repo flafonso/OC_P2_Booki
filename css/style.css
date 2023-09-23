@@ -575,7 +575,6 @@ footer a {
 
   .popular-cards a {
     width: 100%;
-    max-width: 370px;
   }
   .popular-cards .card {
     width: 100%;
@@ -596,7 +595,6 @@ footer a {
 
   .accommodations-cards a {
     width: 100%;
-    max-width: 370px;
   }
 
   /****** Activities ***********/
@@ -606,9 +604,9 @@ footer a {
     gap: 15px;
   }
 
-  .activities-cards a {
+  /* .activities-cards a {
     max-width: 370px;
-  }
+  } */
   .activities-cards img {
     height: 141px;
   }
