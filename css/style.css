@@ -425,6 +425,10 @@ footer a {
     width: 30%;
   }
 
+  .popular-cards img {
+    height: 146px;
+  }
+
   /****** Accommodations ***********/
   .accommodations {
     width: 100%;
